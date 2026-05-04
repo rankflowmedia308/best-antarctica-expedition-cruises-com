@@ -1,0 +1,45 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="site-logo" aria-label="Home">
+          <svg class="site-logo__mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="16,5 22,14 10,14" fill="#2BB5A7"/>
+            <polygon points="8,14 24,14 21,22 11,22" fill="#2BB5A7" opacity="0.5"/>
+          </svg>
+          <div class="site-logo__text">
+            Best Antarctica
+            <span>Expedition Cruises</span>
+          </div>
+        </a>
+        <p>An independent editorial guide to Antarctica expedition cruise operators. No operator has paid for placement. Rankings reflect our assessment as of <span id="footer-date"></span>.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Editorial</h4>
+        <a href="/about/">About This Guide</a>
+        <a href="/editorial-policy/">Ranking Methodology</a>
+        <a href="/contact/">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="/cookie-policy/">Cookie Policy</a>
+        <a href="/terms/">Terms &amp; Disclaimer</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="footer-year"></span> Best Antarctica Expedition Cruises. All rights reserved.</span>
+      <span>Independent editorial — not affiliated with any operator.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const now = new Date();
+  const month = now.toLocaleString('en-US', { month: 'long' });
+  const year = now.getFullYear();
+  document.querySelectorAll('#footer-date').forEach(el => el.textContent = month + ' ' + year);
+  document.querySelectorAll('#footer-year').forEach(el => el.textContent = year);
+</script>

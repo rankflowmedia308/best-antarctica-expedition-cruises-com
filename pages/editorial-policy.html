@@ -1,0 +1,73 @@
+<main>
+<section class="section">
+  <div class="container" style="max-width:860px;">
+    <p class="section-label">| Editorial Policy |</p>
+    <h1>Editorial Policy &amp; Ranking Methodology</h1>
+    <p style="font-family:var(--font-body); font-size:1.05rem; color:var(--color-muted); margin-top:.75rem; margin-bottom:3rem;">How we evaluate and rank Antarctica expedition cruise operators — criteria, weights, and update cycle.</p>
+
+    <!-- Criteria Table -->
+    <h2 style="font-size:1.3rem; margin-bottom:1.25rem;">Ranking Criteria &amp; Weights</h2>
+    <p style="font-family:var(--font-ui); font-size:.92rem; color:var(--color-muted); margin-bottom:1.5rem;">Each operator is scored against six criteria. Scores are weighted and aggregated to produce the final ranking. Criteria were selected because they correlate directly with the quality of the expedition experience in Antarctica — not with marketing spend or brand visibility.</p>
+
+    <div class="table-wrapper" style="margin-bottom:3rem;">
+      <table class="activities-table" style="min-width:500px;">
+        <thead>
+          <tr>
+            <th>Criterion</th>
+            <th>Weight</th>
+            <th>What We Measure</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Shore Time &amp; Ship Size</strong></td>
+            <td><strong style="color:var(--color-accent);">25%</strong></td>
+            <td>Passenger capacity relative to IAATO 100-pax rule; simultaneous vs. rotation landing mechanics; average reported off-ship activity time per day</td>
+          </tr>
+          <tr>
+            <td><strong>IAATO Compliance &amp; Safety</strong></td>
+            <td><strong style="color:var(--color-accent);">20%</strong></td>
+            <td>Active IAATO membership; compliance record; bio-security protocol adherence; incident history; hull ice rating</td>
+          </tr>
+          <tr>
+            <td><strong>Expedition Team Quality</strong></td>
+            <td><strong style="color:var(--color-accent);">20%</strong></td>
+            <td>Guide-to-guest ratio; specialist credentials (ornithology, glaciology, marine biology); years of polar expertise; open bridge policy</td>
+          </tr>
+          <tr>
+            <td><strong>Activity Range</strong></td>
+            <td><strong style="color:var(--color-accent);">15%</strong></td>
+            <td>Optional add-ons available (kayaking, camping, helicopters, diving, ROV); standard vs. optional distinction; availability per voyage</td>
+          </tr>
+          <tr>
+            <td><strong>Value for Money</strong></td>
+            <td><strong style="color:var(--color-accent);">10%</strong></td>
+            <td>Price-per-day relative to shore access, activities, and cabin quality within the operator's price tier; transparency of pricing</td>
+          </tr>
+          <tr>
+            <td><strong>Traveler Feedback</strong></td>
+            <td><strong style="color:var(--color-accent);">10%</strong></td>
+            <td>Aggregated verified traveler reviews from multiple independent platforms; repeat booking rates where available</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Independence -->
+    <div style="background:rgba(43,181,167,.06); border:1px solid rgba(43,181,167,.25); border-radius:var(--radius); padding:1.75rem; margin-bottom:2.5rem;">
+      <h2 style="font-size:1.15rem; margin-bottom:.75rem;">Independence Declaration</h2>
+      <p style="font-family:var(--font-ui); font-size:.92rem; line-height:1.7; color:var(--color-muted);">No operator pays for placement, review, or any form of coverage. No operator is consulted about their ranking prior to publication. Where affiliate relationships exist, they are disclosed and do not influence scoring or ranking position. Our editorial team does not accept complimentary voyages in exchange for coverage.</p>
+    </div>
+
+    <!-- Update Cycle -->
+    <h2 style="font-size:1.15rem; margin-bottom:.75rem;">Update Cycle</h2>
+    <p style="font-family:var(--font-ui); font-size:.92rem; line-height:1.7; color:var(--color-muted); margin-bottom:1rem;">Full ranking reviews are conducted annually, timed to coincide with the booking season (September–October). Rolling updates are made when significant changes occur: new vessel launches, fleet retirements, major pricing restructures, or changes in IAATO membership status. The date of last review is displayed on the main ranking page.</p>
+    <p style="font-family:var(--font-ui); font-size:.85rem; color:var(--color-muted);">Last full review: <strong id="ep-date"></strong></p>
+  </div>
+</section>
+<script>
+  const d = new Date();
+  const el = document.getElementById('ep-date');
+  if(el) el.textContent = d.toLocaleString('en-US',{month:'long'}) + ' ' + d.getFullYear();
+</script>
+</main>

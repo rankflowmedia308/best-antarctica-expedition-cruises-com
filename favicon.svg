@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Iceberg silhouette -->
+  <polygon points="16,3 24,14 28,14 20,28 12,28 4,14 8,14" fill="#0A2540" opacity="0.15"/>
+  <!-- Main iceberg -->
+  <polygon points="16,5 22,14 10,14" fill="#0A2540"/>
+  <!-- Waterline base -->
+  <polygon points="8,14 24,14 21,22 11,22" fill="#7EC8E3"/>
+  <!-- Small ice peak accent -->
+  <polygon points="20,7 23,13 18,13" fill="#7EC8E3" opacity="0.7"/>
+</svg>

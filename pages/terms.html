@@ -1,0 +1,41 @@
+<main>
+<section class="section">
+  <div class="container" style="max-width:780px;">
+    <p class="section-label">| Legal |</p>
+    <h1>Terms &amp; Conditions / Disclaimer</h1>
+    <p style="font-family:var(--font-body); font-size:1.05rem; color:var(--color-muted); margin-top:.75rem; margin-bottom:2.5rem;">Last updated: <span id="terms-date"></span></p>
+
+    <div style="display:grid; gap:2rem;">
+      <div>
+        <h2 style="font-size:1.1rem; margin-bottom:.75rem;">Informational Purpose Only</h2>
+        <p>This website — best-antarctica-expedition-cruises.com — is an independent editorial publication providing informational content about Antarctica expedition cruise operators. We are not a travel agent, tour operator, or booking platform. We do not sell, arrange, or facilitate travel bookings. Nothing on this site constitutes travel advice, and no content should be relied upon as a basis for any booking decision without independent verification.</p>
+      </div>
+      <div>
+        <h2 style="font-size:1.1rem; margin-bottom:.75rem;">No Liability for Booking Decisions</h2>
+        <p>We accept no responsibility or liability for any booking decisions, travel arrangements, financial loss, injury, or other outcomes arising from reliance on information published on this site. Expedition cruise itineraries, pricing, vessel specifications, availability, and operator policies change frequently. Always verify current information directly with the operator before booking.</p>
+      </div>
+      <div>
+        <h2 style="font-size:1.1rem; margin-bottom:.75rem;">Affiliate Disclosure</h2>
+        <p>This site may contain affiliate links to operator websites. If you click an affiliate link and make a booking, we may receive a commission at no additional cost to you. The presence of affiliate links does not influence our editorial rankings or reviews. Operators are ranked based on independent assessment of quality criteria — not on the existence or absence of an affiliate relationship. Our editorial policy is published separately at <a href="/editorial-policy/" style="color:var(--color-accent);">Editorial Policy</a>.</p>
+      </div>
+      <div>
+        <h2 style="font-size:1.1rem; margin-bottom:.75rem;">Accuracy Disclaimer</h2>
+        <p>We endeavour to maintain accurate and up-to-date information. However, operator details including fleet specifications, passenger capacities, IAATO membership status, pricing ranges, and available activities are subject to change without notice. We make no warranties, express or implied, regarding the accuracy, completeness, or currency of any information on this site. All pricing references are approximate ranges provided for comparative purposes only.</p>
+      </div>
+      <div>
+        <h2 style="font-size:1.1rem; margin-bottom:.75rem;">Intellectual Property</h2>
+        <p>All editorial content on this site is original and protected by copyright. Reproduction of editorial text without written permission is prohibited. Operator names, logos, and trademarks referenced on this site belong to their respective owners and are used for editorial identification purposes only.</p>
+      </div>
+      <div>
+        <h2 style="font-size:1.1rem; margin-bottom:.75rem;">Contact</h2>
+        <p>For legal inquiries, contact us at <a href="mailto:contact@best-antarctica-expedition-cruises.com" style="color:var(--color-accent);">contact@best-antarctica-expedition-cruises.com</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const d = new Date();
+  const el = document.getElementById('terms-date');
+  if(el) el.textContent = d.toLocaleString('en-US',{month:'long',year:'numeric'});
+</script>
+</main>
