@@ -1,6 +1,4 @@
-import { NextResponse } from 'next/server';
-
-export function middleware(request) {
+export default function middleware(request) {
   const ua = (request.headers.get("user-agent") || "").toLowerCase();
   const blocked = ["ahrefsbot", "ahrefssiteaudit",
   "semrushbot", "semrushbot-si", "semrushbotbacklinkaudit", "siteauditbot",
@@ -8,7 +6,7 @@ export function middleware(request) {
   if (blocked.some(bot => ua.includes(bot))) {
     return new Response("Forbidden", { status: 403 });
   }
-  return NextResponse.next();
+  return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
 }
 
 export const config = { matcher: "/(.*)" };
