@@ -19,7 +19,7 @@ SCHEMA_ARTICLE=$(cat <<'JSONLD'
   "headline": "Best Antarctica Expedition Cruises 2026: Top 10 Operators Ranked",
   "description": "Independent ranking of the best Antarctica expedition cruise operators for 2026. Compare ships, shore time, activities, and prices to find the right polar expedition for you.",
   "datePublished": "2026-01-01",
-  "dateModified": "2026-04-28",
+  "dateModified": "2026-06-01",
   "publisher": {
     "@type": "Organization",
     "name": "Best Antarctica Expedition Cruises",
